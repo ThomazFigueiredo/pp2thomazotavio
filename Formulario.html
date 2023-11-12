@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Contato</title>
+    <link rel="stylesheet" href="CSS/Estilização.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="javascript/script.js"></script>
+
+</head>
+
+<body>   
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <header>
+        <hr>
+        <h1 id="Form">Ação Girafffa: Protegendo a Vida Selvagem Africana</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="Dados.html">Sobre Nós</a></li>
+                <li><a href="#Form" class="currentIndex">Formulário de Doação</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <fieldset>
+        <legend>
+            <h2 id="doacao">Formulario de Doação</h2>
+        </legend>
+        <form action="Agradecimento.html" method="get" autocomplete="off" id="formulario">
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" autofocus placeholder="(Obrigatório)">
+                <span id="spanNome"></span>
+            </div>
+            <div>
+                <label for="fone">Telefone:</label>
+                <input type="text" id="fone" name="fone"placeholder="(Obrigatório)">
+                <span id="spanFone"></span>
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="(Obrigatório)">
+                <span id="spanIdade"></span>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="(Obrigatório)">
+                <span id="spanEmail"></span>
+            </div>
+            <div>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" placeholder="(Obrigatório)">
+                <span id="spanValor"></span>
+            </div>
+            <br>
+            <div>
+                Deseja doar para alguma(s) das areas de proteção em especifico? (OPICIONAL)
+            </div>
+            <div>
+                <input type="checkbox" id="elegante" name="branch" value="Elefante">
+                <label for="bicho1">Elefante</label>
+                <input type="checkbox" id="gifa" name="branch" value="Girafa (MUITO OBRIGADO AS GIRAFAS AGRADECEM)">
+                <label for="bicho2">GIRAFA (por favor)</label>
+                <input type="checkbox" id="golira" name="branch" value="Gorila">
+                <label for="bicho3">Gorila</label>
+                <input type="checkbox" id="mufasa" name="branch" value="Mufasa">
+                <label for="bicho4">Leão</label>
+                <input type="checkbox" id="riconeronte" name="branch" value="Rinoceronte">
+                <label for="bicho5">Rinoceronte</label>
+            </div>
+            <br>
+            <div>
+                Metodo de Pagamento
+            </div>
+            <div>
+                <input type="radio" name="button" value="pix" id="pix">PIX<br>
+                <input type="radio" name="button" value="boleto" id="boleto">Boleto<br>
+                <input type="radio" name="button" value="cartao de credito" id="cd">Cartão de Debito<br>
+                <input type="radio" name="button" value="cartao de debito" id="cc">Cartao de Crédito<br>
+            </div>
+            <span id="spanPag"></span><br>
+            <br>
+            <button class="button" type="button" onclick="validar()">Validar</button>
+            <br>
+            <div class="modal fade" id="modal-mensagem">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                <h4 class="modal-title">Dados</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="d1"></div>
+                                <div id="d2"></div>
+                                <div id="d3"></div>
+                                <div id="d4"></div>
+                                <div id="d5"></div>
+                                <div id="d6"></div>
+                                <div id="d7"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="button" type="reset" id="botaoReset" onclick="resetar();" data-dismiss="modal">Reiniciar</button>
+                                <button class="button" type="button" id="botaoAlterar" data-dismiss="modal">Alterar</button>
+                                <button class="button" type="submit" id="botaoEnviar">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </fieldset>
+    <br>
+    <hr>
+    <footer>Ação Girafffa: Protegendo a Vida Selvagem Africana 2023</footer>
+</body>
+
+</html>

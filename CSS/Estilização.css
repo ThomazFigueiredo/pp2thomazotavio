@@ -1,0 +1,139 @@
+body {
+    background: linear-gradient(to right, #ffe8b0, #ffd699);
+    color: #57493e;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d2ad87;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 36px;
+}
+
+.currentIndex {
+    color: #ffe8b0;
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #b58f6b;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #57493e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: #57493e;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer, .f1 {
+    background-color: #d2ad87;
+    text-align: center;
+    padding: 10px 0;
+    color: #57493e;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.imagem {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.sub, .desc, .tab {
+    text-align: center;
+    padding: 0 50px;
+}
+
+.desc {
+    font-size: 18px;
+}
+
+table {
+    border: 1px solid #d2ad87;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+td {
+    border: 1px solid #d2ad87;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#nome, #sobrenome, #fone, #idade, #email, #valor {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 80%;
+}
+
+.sub {
+    text-align: center;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #57493e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #ffe8b0;
+    color: #57493e;
+}
+
+#vlw{
+        width: 650px;
+        height: 600px;
+}
+
